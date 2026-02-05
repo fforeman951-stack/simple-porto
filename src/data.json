@@ -1,4 +1,94 @@
 {
-    "name": "Smith"
-    
+    "name": "Alex Smith",
+    "title": "Frontend Web Developer",
+    "role": "Web Developer",
+    "bio": "I build accessible, performant, and user-friendly web applications using React, Next.js and Tailwind CSS.",
+    "avatar": "/images/avatar.jpg",
+    "location": "Remote / San Francisco, CA",
+    "socials": {
+        "github": "https://github.com/alexsmith",
+        "linkedin": "https://www.linkedin.com/in/alexsmith",
+        "twitter": "https://twitter.com/alex_codes"
+    },
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Accessibility",
+        "Performance Optimization"
+    ],
+    "projects": [
+        {
+            "id": "portfolio",
+            "title": "Portfolio Website",
+            "description": "Personal portfolio showcasing projects and blog posts. Built with Next.js and Tailwind CSS.",
+            "tech": ["Next.js", "Tailwind CSS", "TypeScript"],
+            "link": "https://example.com/portfolio"
+        },
+        {
+            "id": "ecommerce-ui",
+            "title": "E-commerce UI",
+            "description": "Responsive product listing and checkout flow with focus on accessibility and conversion.",
+            "tech": ["React", "Tailwind CSS", "Stripe"],
+            "link": "https://example.com/shop-ui"
+        },
+        {
+            "id": "blog-platform",
+            "title": "Blog Platform",
+            "description": "Markdown-powered blog with optimized SEO and fast server-side rendering.",
+            "tech": ["Next.js", "MDX", "Vercel"],
+            "link": "https://example.com/blog"
+        },
+        {
+            "id": "task-manager",
+            "title": "Task Manager App",
+            "description": "Real-time collaborative task management application with drag-and-drop functionality.",
+            "tech": ["React", "Firebase", "Tailwind CSS"],
+            "link": "https://example.com/tasks"
+        },
+        {
+            "id": "weather-dashboard",
+            "title": "Weather Dashboard",
+            "description": "Interactive weather application with real-time data, forecasts, and location tracking.",
+            "tech": ["React", "OpenWeather API", "Chart.js"],
+            "link": "https://example.com/weather"
+        },
+        {
+            "id": "music-player",
+            "title": "Music Player",
+            "description": "Custom music player with playlist management, equalizer, and beautiful UI animations.",
+            "tech": ["HTML5", "CSS3", "JavaScript", "Web Audio API"],
+            "link": "https://example.com/player"
+        },
+        {
+            "id": "design-system",
+            "title": "Design System",
+            "description": "Comprehensive component library and design system documentation for enterprise applications.",
+            "tech": ["Storybook", "React", "TypeScript"],
+            "link": "https://example.com/design-system"
+        },
+        {
+            "id": "analytics-dashboard",
+            "title": "Analytics Dashboard",
+            "description": "Real-time analytics dashboard with interactive charts, filters, and data visualization.",
+            "tech": ["React", "D3.js", "Node.js", "MongoDB"],
+            "link": "https://example.com/analytics"
+        },
+        {
+            "id": "social-network",
+            "title": "Social Network",
+            "description": "Full-stack social media platform with user profiles, messaging, and feed functionality.",
+            "tech": ["Next.js", "PostgreSQL", "GraphQL", "Redis"],
+            "link": "https://example.com/social"
+        }
+    ],
+    "contact": {
+        "email": "alex@example.com",
+        "phone": "",
+        "location": "San Francisco, CA"
+    }
 }

@@ -1,11 +1,34 @@
 import Image from "next/image";
 import data from '../data.json';
 import Footer from "./_components/footer";
+import Header from "./_components/header";
+import GreetingCard from "./_components/cards/greeting";
+import ProjectCard from "./_components/cards/project";
+import SkillCard from "./_components/cards/skills";
+import AboutCard from "./_components/cards/about";
+import ContactCard from "./_components/cards/contact";
 
 export default function Home() {
   return (
     <div>
-      <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <Header/>
+
+      <div style={{
+        margin: '0 50px 0 50px'
+      }}>
+
+        <GreetingCard data={data} />
+
+        <AboutCard bio={data.bio} />
+
+        <SkillCard skills={data.skills} />
+
+        <ProjectCard projects={data.projects} />
+
+        <ContactCard contact={data.contact} />
+      </div>
+
+      {/* <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
           <Image
             className="dark:invert"
@@ -63,7 +86,7 @@ export default function Home() {
             </a>
           </div>
         </main>
-      </div>
+      </div> */}
       
       <Footer name={data.name} />
     </div>
