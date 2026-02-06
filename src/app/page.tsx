@@ -9,12 +9,10 @@ import ContactCard from "./_components/cards/contact";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header/>
 
-      <div style={{
-        margin: '0 50px 0 50px'
-      }}>
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
 
         <GreetingCard data={data} />
 
@@ -25,9 +23,10 @@ export default function Home() {
         <ProjectCard projects={data.projects} />
 
         <ContactCard contact={data.contact} />
-      </div>
+      </main>
 
-      {/* <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      {/* Commented template:
+      <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
           <Image
             className="dark:invert"
@@ -88,6 +87,6 @@ export default function Home() {
       </div> */}
       
       <Footer name={data.name} />
-    </div>
+    </>
   );
 }

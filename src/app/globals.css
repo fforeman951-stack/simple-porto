@@ -2,11 +2,60 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+/* Enhanced dark mode and transitions */
+body {
+  @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300;
+}
+
+/* Improved focus styles for accessibility */
+@layer components {
+  @media (prefers-reduced-motion: no-preference) {
+    a:focus-visible,
+    button:focus-visible {
+      @apply outline-none ring-2 ring-blue-500 ring-offset-2 dark:ring-offset-gray-950 rounded;
+    }
+  }
+
+  /* Smooth transitions for interactions */
+  button:not(:disabled),
+  a {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Prevent layout shift on scroll */
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  /* Better active states */
+  button:active:not(:disabled) {
+    @apply scale-95;
+  }
+
+  /* Print styles */
+  @media print {
+    nav,
+    footer {
+      @apply hidden;
+    }
+  }
+
+  /* Support for reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      @apply !transition-none !duration-0 !animate-none;
+    }
+  }
 }
 
 @theme inline {
