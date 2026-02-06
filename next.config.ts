@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   distDir: '_static',
   basePath: '/simple-porto',
   assetPrefix: '/simple-porto/',
+  unoptimized: true,
 };
 
 export default nextConfig;
