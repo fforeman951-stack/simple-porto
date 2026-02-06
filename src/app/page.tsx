@@ -1,5 +1,4 @@
-import Image from "next/image";
-import data from '../data.json';
+import data from '../../data.json';
 import Footer from "./_components/footer";
 import Header from "./_components/header";
 import GreetingCard from "./_components/cards/greeting";

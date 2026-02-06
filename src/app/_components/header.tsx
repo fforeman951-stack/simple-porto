@@ -24,7 +24,7 @@ export default function Header() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4m-4-4l-4 4m4-4l4-4" />
                             </svg>
                         </div>
-                        <span className="hidden sm:block text-lg font-bold text-gray-900 dark:text-white">Portfolio</span>
+                        {/* <span className="hidden sm:block text-lg font-bold text-gray-900 dark:text-white">Portfolio</span> */}
                     </div>
 
                     {/* Desktop Navigation */}
