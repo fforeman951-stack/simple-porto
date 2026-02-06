@@ -3,10 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
-  distDir: '_static',
+  distDir: 'out',
   basePath: '/simple-porto',
   assetPrefix: '/simple-porto/',
-  unoptimized: true,
 };
 
 export default nextConfig;
