@@ -6,6 +6,7 @@ import ProjectCard from "./_components/cards/project";
 import SkillCard from "./_components/cards/skills";
 import AboutCard from "./_components/cards/about";
 import ContactCard from "./_components/cards/contact";
+import Testimonials from './_components/testimonials';
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         <SkillCard skills={data.skills} />
 
         <ProjectCard projects={data.projects} />
+
+        <Testimonials testimonials={data.testimonials} />
 
         <ContactCard contact={data.contact} />
       </main>
