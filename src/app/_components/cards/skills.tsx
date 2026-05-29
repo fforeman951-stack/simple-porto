@@ -1,24 +1,24 @@
-export default function SkillCard({ skills }: { skills?: string[] }){
-    const list = skills || []
+export default function SkillCard({ skills }: { skills?: { [key: string]: string[] } }){
+    // const list = skills || []
 
     // Organize skills into categories
-    const categories = {
-        "Frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
-        "Frameworks & Tools": ["Next.js", "Tailwind CSS", "Storybook"],
-        "Other": [] as string[]
-    }
+    // const categories = {
+    //     "Frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+    //     "Frameworks & Tools": ["Next.js", "Tailwind CSS", "Storybook"],
+    //     "Other": [] as string[]
+    // }
 
     // Categorize skills
-    Object.keys(categories).forEach(cat => {
-        categories[cat as keyof typeof categories] = list.filter(s => 
-            cat === "Frontend" && ["HTML", "CSS", "JavaScript", "TypeScript", "React"].includes(s) ||
-            cat === "Frameworks & Tools" && ["Next.js", "Tailwind CSS", "Storybook"].includes(s)
-        )
-    })
+    // Object.keys(categories).forEach(cat => {
+    //     categories[cat as keyof typeof categories] = list.filter(s => 
+    //         cat === "Frontend" && ["HTML", "CSS", "JavaScript", "TypeScript", "React"].includes(s) ||
+    //         cat === "Frameworks & Tools" && ["Next.js", "Tailwind CSS", "Storybook"].includes(s)
+    //     )
+    // })
 
     // Put uncategorized skills in "Other"
-    const categorizedSkills = Object.values(categories).flat()
-    categories["Other"] = list.filter(s => !categorizedSkills.includes(s))
+    // const categorizedSkills = Object.values(categories).flat()
+    // categories["Other"] = list.filter(s => !categorizedSkills.includes(s))
 
     return (
         <section id="skills" className="my-12 p-8 rounded-lg bg-white dark:bg-white/5 shadow-sm dark:shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg dark:hover:shadow-xl">
@@ -28,7 +28,7 @@ export default function SkillCard({ skills }: { skills?: string[] }){
             </div>
 
             <div className="space-y-8">
-                {Object.entries(categories).map(([category, categorySkills]) => 
+                {Object.entries(skills || {}).map(([category, categorySkills]) => 
                     categorySkills.length > 0 && (
                         <div key={category}>
                             <h4 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">{category}</h4>

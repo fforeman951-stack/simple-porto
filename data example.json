@@ -10,17 +10,13 @@
         "linkedin": "https://www.linkedin.com/in/alexsmith",
         "twitter": "https://twitter.com/alex_codes"
     },
-    "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-        "Accessibility",
-        "Performance Optimization"
-    ],
+    "skills": {
+        "Programming Languages": ["PHP", "JavaScript", "TypeScript", "SQL", "NoSQL"],
+        "Backend": ["Laravel", "Express.js"],
+        "Frontend": ["Next.js", "Nuxt.js"],
+        "Tools": ["VS Code", "Git", "Docker", "Postman", "DataGrip"],
+        "Other": ["Web Server", "Cloudflare", "CI/CD"]  
+    },
     "projects": [
         {
             "id": "portfolio",
