@@ -82,6 +82,29 @@
             "link": "https://example.com/social"
         }
     ],
+    "testimonials": [
+        {
+            "id": "t1",
+            "name": "Rebecca Lee",
+            "role": "Product Manager, Acme Co.",
+            "quote": "Alex delivered a beautifully accessible website on time and exceeded expectations. Communication was excellent throughout.",
+            "avatar": "/testimonials/rebecca.jpg"
+        },
+        {
+            "id": "t2",
+            "name": "Daniel Kim",
+            "role": "CTO, BrightApps",
+            "quote": "Highly professional and detail-oriented. The UI improvements raised our conversion rate noticeably.",
+            "avatar": "/testimonials/daniel.jpg"
+        },
+        {
+            "id": "t3",
+            "name": "Sofia Martinez",
+            "role": "Founder, Sprout Studio",
+            "quote": "Great collaborator — fast, responsive, and focused on accessibility. Would hire again.",
+            "avatar": "/testimonials/sofia.jpg"
+        }
+    ],
     "contact": {
         "email": "alex@example.com",
         "phone": "",
