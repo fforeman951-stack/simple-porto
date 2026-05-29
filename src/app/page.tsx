@@ -1,4 +1,3 @@
-import data from '../../data-example.json';
 import Footer from "./_components/footer";
 import Header from "./_components/header";
 import GreetingCard from "./_components/cards/greeting";
@@ -9,6 +8,8 @@ import ContactCard from "./_components/cards/contact";
 import Testimonials from './_components/testimonials';
 
 export default function Home() {
+  const data = JSON.parse(process?.env?.NEXT_PUBLIC_DATA || '{}');
+  
   return (
     <>
       <Header/>
