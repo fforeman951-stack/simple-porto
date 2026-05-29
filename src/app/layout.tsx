@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,20 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Developer & Designer",
+  title: "Simple Porto | Developer & Designer",
   description: "Showcase of web development projects and skills. Built with React, Next.js, and modern web technologies.",
   keywords: "portfolio, developer, next.js, react, web development",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  authors: [{ name: "Portfolio Owner" }],
+  authors: [{ name: "paterikprograming@gmail.com" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourportfolio.com",
-    siteName: "My Portfolio",
-    title: "Portfolio | Developer & Designer",
+    siteName: "Simple Porto",
+    title: "Simple Porto | Developer & Designer",
     description: "Showcase of web development projects and skills.",
   },
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export default function RootLayout({
   children,
